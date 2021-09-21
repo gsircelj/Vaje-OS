@@ -1,0 +1,4 @@
+source ~/.bashrc
+PS1='\e[0;32m\u-\W/project_work$ \e[m'
+PROJECTNAME=project_work
+PROJECTDIR=project_work
