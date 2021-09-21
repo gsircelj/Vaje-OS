@@ -1,0 +1,62 @@
+Specifikacije računalnika:
+i7-7700HQ CPU 2.80GHz (4 jedra, 8 niti)
+16 GB RAM
+
+Virtualni računalnik:
+2 GB RAM
+------------------------------------------------------------
+time cat rand_stevila.bin | ./mergeSort 10000
+real	0m0,071s
+user	0m0,016s
+sys	0m0,006s
+
+time cat rand_stevila.bin | ./mergeSort 100000
+real	0m0,800s
+user	0m0,124s
+sys	0m0,075s
+
+time cat rand_stevila.bin | ./mergeSort 1000000
+real	0m8,202s
+user	0m1,219s
+sys	0m0,780s
+
+-------------------------------------------------------------
+time cat rand_stevila.bin | ./mergeSort -p 10000
+real	0m0,061s
+user	0m0,009s
+sys	0m0,014s
+
+time cat rand_stevila.bin | ./mergeSort -p 100000
+real	0m0,808s
+user	0m0,106s
+sys	0m0,091s
+
+
+time cat rand_stevila.bin | ./mergeSort -p 1000000
+real	0m8,134s
+user	0m1,216s
+sys	0m0,790s
+
+-------------------------------------------------------------
+time cat rand_stevila.bin | ./mergeSort -t 10000	
+real	0m0,060s
+user	0m0,015s
+sys	0m0,008s
+
+time cat rand_stevila.bin | ./mergeSort -t 100000
+real	0m0,799s
+user	0m0,113s
+sys	0m0,084s
+
+time cat rand_stevila.bin | ./mergeSort -t 1000000
+real	0m8,388s
+user	0m1,208s
+sys	0m0,812s
+
+-------------------------------------------------------------
+Ugotovitve:
+Paralizirano: 2 procesa zaporedno, 2 niti.
+Rezultati zelo nihajo med različnimi pogoni.
+Razlike so skoraj minimalne med različnimi sortiranji.
+
+V jeziku C ni možno v istem časovnem trenutku pognati več procesov.

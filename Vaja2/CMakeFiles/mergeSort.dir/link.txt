@@ -1,0 +1,1 @@
+/usr/bin/cc   -rdynamic CMakeFiles/mergeSort.dir/mergeSort.c.o  -o mergeSort -lpthread -lrt 

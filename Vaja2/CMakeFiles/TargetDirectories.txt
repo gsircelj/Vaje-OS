@@ -1,0 +1,3 @@
+/home/toni/Vaja2/mergeSortThreads/CMakeFiles/rebuild_cache.dir
+/home/toni/Vaja2/mergeSortThreads/CMakeFiles/mergeSort.dir
+/home/toni/Vaja2/mergeSortThreads/CMakeFiles/edit_cache.dir
